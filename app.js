@@ -16,8 +16,8 @@ const claimModel = require('./model/claimModel')
 const startMenu = require('./modules/startMenu')
 const userWizard = require('./modules/userWizard')
 
-// const bot = new Composer()
-const bot = new Telegraf('5259992206:AAFHOgAHdlt3hrTx4ObxTrpzysRq319L2a4')
+const bot = new Composer()
+// const bot = new Telegraf('5259992206:AAFHOgAHdlt3hrTx4ObxTrpzysRq319L2a4')
 
 mongoose.connect('mongodb+srv://rasedul20:rasedul20@cluster0.ax9se.mongodb.net/airdropBot?retryWrites=true&w=majority', {
     useNewUrlParser: true,
@@ -377,6 +377,6 @@ bot.hears('Claim Rewards',ctx=>{
 
 
 
-bot.launch()
+// bot.launch()
 
-// module.exports = bot
+module.exports = bot
