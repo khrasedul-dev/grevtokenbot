@@ -19,7 +19,7 @@ const userWizard = require('./modules/userWizard')
 const bot = new Composer()
 // const bot = new Telegraf('5259992206:AAFHOgAHdlt3hrTx4ObxTrpzysRq319L2a4')
 
-mongoose.connect('mongodb+srv://rasedul20:rasedul20@cluster0.ax9se.mongodb.net/airdropBot?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://rasedul20:rasedul20@telegramproject.blfo7.mongodb.net/airdropDatabase?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).catch((e) => {
@@ -31,7 +31,7 @@ mongoose.connect('mongodb+srv://rasedul20:rasedul20@cluster0.ax9se.mongodb.net/a
 
 
 
-const settingsId = '6211fe05c190a6ada709821e'
+const settingsId = '62285baa5658662d417380f7'
 
 
 bot.use(session())
