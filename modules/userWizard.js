@@ -164,14 +164,14 @@ const userWizard = new WizardScene('user-wizard',
                                       userId: ctx.from.id
                                   }).then((data)=>{
 
-                                          const r = p_user[0].referr_id
+                                          const r = data[0].referr_id
 
                                           userModel.find({
                                               userId: r
                                           }).then((data)=>{
 
-                                              const b = parseFloat(d[0].balance)
-                                              const ref_count = parseInt(d[0].referralCount) + 1
+                                              const b = parseFloat(data[0].balance)
+                                              const ref_count = parseInt(data[0].referralCount) + 1
 
                                               const fpc = b + referral_bounus
 

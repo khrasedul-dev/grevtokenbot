@@ -68,11 +68,14 @@ bot.start(ctx => {
                 if (status > 0) {
 
                     const referrId = ctx.startPayload
+
+                    console.log("Referrar id: "+referrId)
+
                     if (referrId) {
-                        const data3 = userModel.find({
-                            userId: referrId
-                        })
+                        const data3 = userModel.find({userId: referrId})
+                        
                         data3.then((data) => {
+
                             const userdata = new userModel({
                                 referr_id: referrId,
                                 userId: ctx.from.id,
@@ -80,6 +83,7 @@ bot.start(ctx => {
                             })
 
                             const data4 = userdata.save()
+
                             data4.then((data) => {
                                 const data5 = settingsModel.find({
                                     id: settingsId
