@@ -113,7 +113,7 @@ const userWizard = new WizardScene('user-wizard',
 
   (ctx) => {
 
-      ctx.telegram.sendMessage(ctx.chat.id, `<b>Task 5:</b> \n\nSubmit your BEP-20 address\n\nThen tap on button next`, {
+      ctx.telegram.sendMessage(ctx.chat.id, `<b>Task 5:</b> \n\nSubmit your BEP-20 address`, {
           reply_markup: {
               remove_keyboard: true
           },
