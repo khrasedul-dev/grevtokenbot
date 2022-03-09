@@ -28,7 +28,8 @@ const userWizard = new WizardScene('user-wizard',
             reply_markup: {
                 keyboard: [
                     [{text: "I agree" , request_contact: true}]
-                ]
+                ],
+                resize_keyboard: true
             }
         })
 
