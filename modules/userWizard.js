@@ -15,7 +15,7 @@ const startMenu = require('../modules/startMenu')
 const bot = new Composer()
 
 
-const settingsId = '6211fe05c190a6ada709821e'
+const settingsId = '62285baa5658662d417380f7'
 
 
 bot.use(session())
