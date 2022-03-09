@@ -303,7 +303,7 @@ bot.hears("Back", ctx => {
             ctx.telegram.sendMessage(ctx.chat.id, `Hello ${ctx.from.first_name} \n\nAccount information: \nUserId: ${data[0].userId} \nName: ${data[0].name}`, {
                 reply_markup: {
                     keyboard: [
-                        [{text: "Claim Rewards"},{text: "Withdraw"}],
+                        [{text: "Withdraw"}],
                         [{text: "My account"},{text: "Help"}]
                     ],
                     resize_keyboard: true
