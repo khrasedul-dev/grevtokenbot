@@ -310,7 +310,7 @@ bot.hears("Back", ctx => {
                 }
             }).catch((e) => console.log(e))
         } else {
-            ctx.telegram.sendMessage(ctx.chat.id, `Hello ${ctx.from.first_name} \n\nWe are very sorry we could not find you our database \nPlease join our airdrop first \n\nThank you using ${ctx.botInfo.username}`).catch((e) => console.log(e))
+            ctx.telegram.sendMessage(ctx.chat.id, `Hello ${ctx.from.first_name} \n\nWe are very sorry we could not find you our database \nPlease join our airdrop first \n\n For join type command /start \n\nThank you using ${ctx.botInfo.username}`).catch((e) => console.log(e))
         }
     }).catch((e) => console.log("Back : Something is wrong"))
 
